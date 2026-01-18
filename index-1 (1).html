@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>برنامج المحاضرات</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    padding:30px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+h1,h2{
+    text-align:center;
+}
+
+.lecture{
+    background:#1877f2;
+    color:white;
+    padding:15px;
+    margin-top:15px;
+    border-radius:8px;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:0.3s;
+}
+
+.lecture:hover{
+    background:#0d5dc6;
+}
+
+.icon{
+    font-size:22px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>برنامج الماجستير في الدبلوماسية والعلاقات الدولية</h1>
+<h2>محاضرات الفصل الدراسي الأول 2025/2026</h2>
+
+<div class="lecture" onclick="go()">
+    <div>
+        <strong>المحاضرة الأولى</strong>  
+        (مساق تحليل الأزمات الدولية)<br>
+        يوم الأحد | من الساعة 12:00 إلى 14:00
+    </div>
+    <div class="icon">🎓</div>
+</div>
+
+<div class="lecture" onclick="go()">
+    <div>
+        <strong>المحاضرة الثانية</strong>  
+        (مساق تحليل السياسة الخارجية)<br>
+        يوم الثلاثاء | من الساعة 12:00 إلى 14:00
+    </div>
+    <div class="icon">🎥</div>
+</div>
+
+</div>
+
+<script>
+function go(){
+    window.open(
+        "https://meet.google.com/xth-ocfb-tvx",
+        "_blank"
+    );
+}
+</script>
+
+</body>
+</html>
